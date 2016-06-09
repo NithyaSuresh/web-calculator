@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<meta charset="utf-8" />
+<title>Web Calculator</title>
+<link rel="stylesheet" href="../css/styles.css" />
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+<script src="../js/script.js"></script>
+</head>
+<body>
+		
+	<div id="heading">Web Calculator</div>
+	<div id="display" ng-controller="calculate">
+		<table>
+			<tr>
+				<td>
+					<div id="calculator">
+						<div id="total"></div>
+						<div id="operators">
+							<a>+</a> <a>-</a> <a>/</a>  <a>*</a> <a>.</a><a id="equals">=</a>
+						</div>
+						<div id="numbers">
+							<a>1</a> <a>2</a> <a>3</a> <a>4</a> <a>5</a> <a>6</a> <a>7</a> <a>8</a>
+							<a>9</a> <a id="clear">C</a> <a>0</a> <a id="clearall">AC</a>
+						</div>
+					</div>			
+				</td>
+				<td>				
+					<span id="spanInput" style="text-align:center; font-size: 30px;color: black;"">Display:<div id="input"></div></span>			
+					<div id="expression" style="visibility:hidden"></div>				
+					<span id="spanoldInput" style="text-align:center; font-size: 30px;color: green;"">Input:<div id="oldInput">{{calc.input}}</div></span>
+					<span id="spanOutput" style="text-align:center; font-size: 30px;color: green;"">Output:<div id="output">{{calc.output}}</div></span>		
+					<div id="errorCode">{{calc.ErrorCode}}</div>			
+					<div id="errorCode">{{calc.ErrorDescription}}</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

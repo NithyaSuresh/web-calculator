@@ -1,0 +1,6 @@
+com\kla\web\calculator\business\spi\CalculatorBusiness.class
+com\kla\web\calculator\logging\aspect\LoggingAspect.class
+com\kla\web\calculator\services\util\CalculatorServiceUtil.class
+com\kla\web\calculator\App.class
+com\kla\web\calculator\services\rest\CalculatorService.class
+com\kla\web\calculator\business\impl\CalculatorBusinessImpl.class
